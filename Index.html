@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="Styles.css">
+<body>
+<form>
+	<!-- pizza name -->
+	<section>
+	<h1>Pizza</h1>
+	<div class="titlepizzaname">
+		<div class="pizzabox" >
+			<img src="pizza1.jpg" alt="pizza1" />
+			<p>PIZZA 1 </p>
+			<p>$8</p>
+			<input type="radio" name="pizzaname" value="pizza1" required="required" onclick="namePizzaSelected(8,'tpizza1')"/>
+		</div>
+		
+		<div class="pizzabox" >
+			<img src="pizza2.jpg" alt="pizza2" />
+			<p>PIZZA 2 </p>
+			<p>$10</p>
+			<input type="radio" name="pizzaname" value="pizza2" required="required" onclick="namePizzaSelected(10,'tpizza2')"/>
+		</div>
+		
+		<div class="pizzabox" >
+			<img src="pizza3.jpg" alt="pizza3" />
+			<p>PIZZA 3 </p>
+			<p>$12</p>
+			<input type="radio" name="pizzaname" value="pizza3" required="required" onclick="namePizzaSelected(12,'tpizza3')"/>
+		</div>
+	</div>
+	</section>
+	
+	<!-- pizza size -->
+	<section>
+	<h1>Size</h1>
+	<div>
+		<div class="pizzasizebox">
+		<input type="radio" name="pizzasize" value="small"   onclick="sizePizzaSelected(-1)" />
+		<p class="namesize">Small</p>
+		</div>
+		
+		<div class="pizzasizebox">
+		<input type="radio" name="pizzasize" value="Medium" onclick="sizePizzaSelected(0)" checked="checked" />
+		<p class="namesize">Medium</p>
+		</div>
+		
+		<div class="pizzasizebox">
+		<input type="radio" name="pizzasize" value="Large"  onclick="sizePizzaSelected(2)" />
+		<p class="namesize">Large</p>
+		</div>
+	</div>
+	</section>
+	
+	<!-- pizza toppings -->
+	<section>
+	<h1>Toppings</h1>
+	<div>
+		<div class="pizzatoppingsbox">
+		<input class="tpizza1" type="checkbox" name="pizzatoppings" value="avocado" onclick="toppingsPizzaSelected(1,0)" />Avocado<br />
+		<input class="tpizza1 tpizza2 tpizza3" type="checkbox" name="pizzatoppings" value="broccoli" onclick="toppingsPizzaSelected(1,1)"/>Broccoli<br />
+		<input class="tpizza1 tpizza2 tpizza3" type="checkbox" name="pizzatoppings" value="onions" onclick="toppingsPizzaSelected(1,2)"/>Onions<br />
+		<input class="tpizza1 tpizza2 tpizza3" type="checkbox" name="pizzatoppings" value="zucchini" onclick="toppingsPizzaSelected(1,3)"/>Zucchini<br />
+		</div>
+		
+		<div class="pizzatoppingsbox">
+		<input class="tpizza2" type="checkbox" name="pizzatoppings" value="lobster" onclick="toppingsPizzaSelected(2,4)"/>Lobster<br />
+		<input class="tpizza2" type="checkbox" name="pizzatoppings" value="oyster" onclick="toppingsPizzaSelected(2,5)"/>Oyster<br />
+		<input class="tpizza2" type="checkbox" name="pizzatoppings" value="salmon" onclick="toppingsPizzaSelected(2,6)"/>Salmon<br />
+		<input class="tpizza1 tpizza3" type="checkbox" name="pizzatoppings" value="tuna" onclick="toppingsPizzaSelected(2,7)"/>Tuna<br />
+		</div>
+		
+		<div class="pizzatoppingsbox">
+		<input class="tpizza2 tpizza3" type="checkbox" name="pizzatoppings" value="bacon" onclick="toppingsPizzaSelected(3,8)"/>Bacon<br />
+		<input class="tpizza3" type="checkbox" name="pizzatoppings" value="duck" onclick="toppingsPizzaSelected(3,9)"/>Duck<br />
+		<input class="tpizza1 tpizza2 tpizza3" type="checkbox" name="pizzatoppings" value="ham" onclick="toppingsPizzaSelected(3,10)"/>Ham<br />
+		<input class="tpizza3" type="checkbox" name="pizzatoppings" value="sausage" onclick="toppingsPizzaSelected(3,11)"/>Sausage<br />
+		</div>
+	</div>
+	</section>
+	
+	<!-- pizza price -->
+	<section >
+		<h1>Price</h1>
+		<p><b class="texttotalprice">$ </b><b id="totalprice" class="texttotalprice">0</b></p>
+	</section>
+	
+</form>
+
+<footer>
+<p>by : Bilal Zulvi</p>
+</footer>
+<!-- gmail does not accept .js extention file, so i changed to .JavaScript extention -->
+<script src="JavaScript.JavaScript" ></script>
+</body>
+</html>

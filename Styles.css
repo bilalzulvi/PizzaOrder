@@ -1,0 +1,70 @@
+*{
+line-height:4px;
+}
+
+body{
+margin-left:auto;
+margin-right:auto;
+width:820px;
+border:1px solid black;
+}
+
+section{
+margin-left:45px;
+margin-bottom:50px;
+}
+
+/* ------------------box pizza---------- */
+div.pizzabox{
+display:inline-block;
+border:3px solid black;
+width:220px;
+height:240px;
+margin:10px;
+}
+div.titlepizzaname{
+text-align:center;
+}
+div.pizzasizebox{
+display:inline-block;
+width:100px;
+margin-left:20px;
+text-align:center;
+}
+
+div.pizzatoppingsbox{
+display:inline-block;
+width:200px;
+}
+
+/*----------------------------------------*/
+img{
+width:180px;
+padding-top:20px;
+}
+
+p{
+text-align:left;
+padding-left:20px;
+}
+p.namesize{
+text-align:center;padding-left:0px;
+}
+
+h1{
+	text-align:left;
+}
+
+b.texttotalprice{
+font-size:20px;
+}
+/*-------------------input--------------------*/
+input[type=checkbox] {
+    width:20px;
+	height:20px;	
+}
+
+input[type=radio]{
+	width:20px;
+	height:20px;
+}
